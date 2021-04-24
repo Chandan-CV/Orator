@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/orator_bg_main_l"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="577dp"
+        android:layout_height="178dp"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:gravity="start|bottom"
+        android:hint="Enter the text here"
+
+        android:inputType="textMultiLine"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/dictate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/dictate"
+        android:layout_width="178dp"
+        android:layout_height="85dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="50dp"
+        android:text="Dictate"
+        android:background="@drawable/final_button"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/Camera"
+        android:layout_width="178dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="50dp"
+        android:text="Camera"
+        android:background="@drawable/final_button"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-9550074938550545/1665186959"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

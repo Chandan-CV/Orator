@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/orator_bg_main_p"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="383dp"
+        android:layout_height="377dp"
+        android:layout_marginStart="24dp"
+
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="75dp"
+        android:ems="10"
+        android:gravity="start|bottom"
+        android:hint="Enter the text here"
+
+        android:inputType="textMultiLine"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/dictate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.706" />
+
+    <Button
+        android:id="@+id/dictate"
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:layout_marginStart="50dp"
+
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="75dp"
+        android:background="@drawable/final_button"
+        android:text="@string/dictate"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/Camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Camera"
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/final_button"
+        android:text="Camera"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/dictate"
+        app:layout_constraintStart_toStartOf="@+id/dictate" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-9550074938550545/1665186959"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </com.google.android.gms.ads.AdView>
+</androidx.constraintlayout.widget.ConstraintLayout>

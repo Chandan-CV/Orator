@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "487544804536",
+    "firebase_url": "https://orator-f234f.firebaseio.com",
+    "project_id": "orator-f234f",
+    "storage_bucket": "orator-f234f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:487544804536:android:14aeb5a62a9686a1c5504d",
+        "android_client_info": {
+          "package_name": "com.example.orator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "487544804536-si870jndgb5lhp4ab7q6683m5smhds6u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBY-hQlVT4fijnn9hvVRZs01h_NOKoh2nU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "487544804536-si870jndgb5lhp4ab7q6683m5smhds6u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
